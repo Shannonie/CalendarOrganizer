@@ -1,0 +1,81 @@
+﻿<mahApps:MetroWindow x:Class="CalendarOrganizer.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mahApps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                     xmlns:view="clr-namespace:CalendarOrganizer.UI.View"
+        xmlns:viewModel="clr-namespace:CalendarOrganizer.UI.ViewModel"
+        mc:Ignorable="d"
+        Title="CalendarOrganizer" Height="600" Width="800" FontSize="20">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewModel:TaskViewModel}">
+            <view:TaskDetailView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:TaskTypeViewModel}">
+            <view:TaskTypeView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:DateTasksViewModel}">
+            <view:DateTasksView/>
+        </DataTemplate>
+        <Style x:Key="TabHeaderStyle" TargetType="TextBlock"
+               BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Menu Grid.ColumnSpan="2" FontSize="20">
+            <Menu.ItemContainerStyle>
+                <Style TargetType="MenuItem" BasedOn="{StaticResource {x:Type MenuItem}}">
+                    <Setter Property="Height" Value="32"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="FontSize" Value="18"/>
+                </Style>
+            </Menu.ItemContainerStyle>
+            <MenuItem Header="Create">
+                <MenuItem Header="New Task" Command="{Binding CreateNewDetailCommand}"
+                          CommandParameter="{x:Type viewModel:TaskViewModel}"/>
+                <MenuItem Header="New DateTasks" Command="{Binding CreateNewDetailCommand}"
+                          CommandParameter="{x:Type viewModel:DateTasksViewModel}"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Task Type" Command="{Binding OpenSingleDetailCommand}"
+                          CommandParameter="{x:Type viewModel:TaskTypeViewModel}"/>
+            </MenuItem>
+        </Menu>
+        <view:NavigationView Grid.Row="1" DataContext="{Binding NavigationViewModel}" />
+        <TabControl Grid.Row="1" Grid.Column="1" ItemsSource ="{Binding DetailViewModels}"
+                    SelectedItem="{Binding SelectedDetailViewModel, Mode=TwoWay}">
+            <TabControl.ItemContainerStyle>
+                <Style TargetType="TabItem" BasedOn="{StaticResource {x:Type TabItem}}">
+                    <Setter Property="Background" Value="#fbfcfc"/>
+                    <Setter Property="BorderBrush" Value='Transparent'/>
+                    <Setter Property="BorderThickness" Value='1'/>
+                </Style>
+            </TabControl.ItemContainerStyle>
+            <TabControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Title}" VerticalAlignment="Center"
+                                   Style="{StaticResource TabHeaderStyle}"/>
+                        <TextBlock Text="*" Visibility="{Binding HasChanges,
+                            Converter={StaticResource booleanToVisibilityConverter}}"
+                                   Style="{StaticResource TabHeaderStyle}" Foreground="#e61919"/>
+                        <Button Content="x" Margin="5 0 0 10" Command="{Binding CloseDetailTabCommand}"
+                                Style="{StaticResource MahApps.Styles.Button.Chromeless}"
+                                FontSize="18" FontWeight="ExtraBold" Foreground="#2a2644 "/>
+                    </StackPanel>
+                </DataTemplate>
+            </TabControl.ItemTemplate>
+        </TabControl>
+    </Grid>
+</mahApps:MetroWindow>

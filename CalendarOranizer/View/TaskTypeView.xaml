@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="CalendarOrganizer.UI.View.TaskTypeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CalendarOrganizer.UI.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid ItemsSource="{Binding TaskTypes}" Margin="10" RowHeaderWidth="0"
+                  SelectedItem="{Binding SelectedTaskType, Mode=TwoWay}"
+                  AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Task Type" Width="*"
+                                    ElementStyle="{StaticResource DataGridColumnStyle}"
+                                    EditingElementStyle="{StaticResource DataGridEditingColumnStyle}"
+                                    Binding="{Binding Type, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Column="1" Margin="0 5 5 5">
+            <Button Content="Add" Margin="5" Width="125" Command ="{Binding AddCommand}"/>
+            <Button Content="Remove" Margin="5" Width="125" Command ="{Binding RemoveCommand}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Save" Width="125" Margin="10" Command ="{Binding SaveCommand}"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

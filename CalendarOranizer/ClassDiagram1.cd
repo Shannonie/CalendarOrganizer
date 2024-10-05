@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CalendarOrganizer.UI.App" Collapsed="true">
+    <Position X="29.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Data.Lookups.LookUpDbItems" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Data\Lookups\LookUpDbItems.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Data.Repositories.DateTasksRepository" Collapsed="true">
+    <Position X="13.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Data\Repositories\DateTasksRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Data.Repositories.GenericRepository&lt;TEntity, TContext&gt;" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMgAAAAAAAABEAAAAAABAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Repositories\GenericRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Data.Repositories.TaskRepository" Collapsed="true">
+    <Position X="8.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Data\Repositories\TaskRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Data.Repositories.TaskTypeRepository" Collapsed="true">
+    <Position X="11" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Repositories\TaskTypeRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Event.AfterCollectionSavedEvent" Collapsed="true">
+    <Position X="24.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Event\AfterCollectionSavedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Event.AfterCollectionSavedEventArgs" Collapsed="true">
+    <Position X="26" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Event\AfterCollectionSavedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Event.AfterDetailClosedTabEvent" Collapsed="true">
+    <Position X="29.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Event\AfterDetailClosedTabEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Event.AfterDetailClosedEventArgs" Collapsed="true">
+    <Position X="27.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Event\AfterDetailClosedTabEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Event.AfterDetailDeletedEvent" Collapsed="true">
+    <Position X="31.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Event\AfterDetailDeletedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Event.AfterDetailDeletedEventArgs" Collapsed="true">
+    <Position X="24.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Event\AfterDetailDeletedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Event.AfterDetailSavedEvent" Collapsed="true">
+    <Position X="26" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Event\AfterDetailSavedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Event.AfterDetailSavedEventArgs" Collapsed="true">
+    <Position X="27.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAA=</HashCode>
+      <FileName>Event\AfterDetailSavedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Event.OpenDetailEvent" Collapsed="true">
+    <Position X="24.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Event\OpenDetailEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Event.OpenDetailEventArgs" Collapsed="true">
+    <Position X="26" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Event\OpenDetailEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Properties.Resources" Collapsed="true">
+    <Position X="27.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Properties.Settings" Collapsed="true">
+    <Position X="29.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Startup.Bootstrapper" Collapsed="true">
+    <Position X="31.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Startup\Bootstrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.View.DateTasksView" Collapsed="true">
+    <Position X="24.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\DateTasksView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.View.NavigationView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\NavigationView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.View.TaskDetailView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\TaskDetailView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.View.TaskTypeView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\TaskTypeView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.View.Services.MessageDialogServices" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>View\Service\MessageDialogServices.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.ViewModel.DateTasksViewModel" Collapsed="true">
+    <Position X="17.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAwkAKnSACAAAAABAAIgAEJAAAAEAIUAACAAAAQEAA=</HashCode>
+      <FileName>ViewModel\DateTasksViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.ViewModel.DetailViewModel" Collapsed="true">
+    <Position X="19.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAxCICAEEEAAgBAgAAEAAAQAABQAAiAAAEEAAA=</HashCode>
+      <FileName>ViewModel\DetailViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.ViewModel.MainViewModel" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIAAAACAAEAIIIEBAAAgAAAIAAAAAAUAAIAAAgAAAQ=</HashCode>
+      <FileName>ViewModel\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.ViewModel.NavigationItemViewModel" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAACAAAAAAAAAAAAAACAAAAAAAAAAAAAQAAAIAA=</HashCode>
+      <FileName>ViewModel\NavigationItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.ViewModel.NavigationViewModel" Collapsed="true">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAmAAAAAAIAAABhAAAAAAAAAAAAgAQAAAQAAAA=</HashCode>
+      <FileName>ViewModel\NavigationViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.ViewModel.TaskTypeViewModel" Collapsed="true">
+    <Position X="19.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAwAhIICABAACgAAAgAAAAAAAAEAQAACAABgACAQ=</HashCode>
+      <FileName>ViewModel\TaskTypeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.ViewModel.TaskViewModel" Collapsed="true">
+    <Position X="21.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAACEAhABKAAAAAQAAEgAAEAKIIQACQAQCAASEAAAA=</HashCode>
+      <FileName>ViewModel\TaskViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.ViewModel.ViewModelBase" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAQAAACAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Wrapper.ContactWrapper" Collapsed="true">
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAYAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\ContactWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Wrapper.DateTasksWrapper" Collapsed="true">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAASAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\DateTasksWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Wrapper.ModelWrapper&lt;T&gt;" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAIAAAAgAAAAAAAAAAASAABAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Wrapper\ModelWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Wrapper.NotifyDataErrorInfoBase" Collapsed="true">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAIABAAAAAhoAA=</HashCode>
+      <FileName>Wrapper\NotifyDataErrorInfoBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Wrapper.TaskTypeWrapper" Collapsed="true">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\TaskTypeWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalendarOrganizer.UI.Wrapper.TaskWrapper" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAGAAAIAAAAAAAABAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\TaskWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CalendarOrganizer.UI.Data.Lookups.IDateTasksLookUpService" Collapsed="true">
+    <Position X="24.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Data\Lookups\IDateTasksLookUpService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalendarOrganizer.UI.Data.Lookups.ITaskDataLookUpService" Collapsed="true">
+    <Position X="29.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Lookups\ITaskDataLookUpService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalendarOrganizer.UI.Data.Lookups.ITaskTypeLookUpService" Collapsed="true">
+    <Position X="31.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Lookups\ITaskTypeLookUpService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalendarOrganizer.UI.Data.Repositories.IDateTasksRepository" Collapsed="true">
+    <Position X="0.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Data\Repositories\IDateTasksRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalendarOrganizer.UI.Data.Repositories.IGenericRepository&lt;T&gt;" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMgAAAAAAAAAEAAAAAABAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Repositories\IGenericRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalendarOrganizer.UI.Data.Repositories.ITaskRepository" Collapsed="true">
+    <Position X="3" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Data\Repositories\ITaskRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalendarOrganizer.UI.Data.Repositories.ITaskTypeRepository" Collapsed="true">
+    <Position X="5.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Repositories\ITaskTypeRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalendarOrganizer.UI.View.Services.IMessageDialogServices" Collapsed="true">
+    <Position X="26" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>View\Service\IMessageDialogServices.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalendarOrganizer.UI.ViewModel.IDateTasksViewModel" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\IDateTasksViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalendarOrganizer.UI.ViewModel.IDetailViewModel" Collapsed="true">
+    <Position X="1.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAhAACAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\IDetailViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalendarOrganizer.UI.ViewModel.INavigationViewModel" Collapsed="true">
+    <Position X="27.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\INavigationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalendarOrganizer.UI.ViewModel.ITaskViewModel" Collapsed="true">
+    <Position X="2.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ITaskViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CalendarOrganizer.UI.View.Services.MessageDialogOptions" Collapsed="true">
+    <Position X="24.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>View\Service\MessageDialogServices.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft JhengHei UI" Size="9" />
+</ClassDiagram>
